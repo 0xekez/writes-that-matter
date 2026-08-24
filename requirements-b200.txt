@@ -1,0 +1,17 @@
+# Exact Python environment used for the validated B200 results.
+# Install PyTorch from the CUDA 13.0 index available for your environment.
+torch==2.13.0+cu130
+triton==3.7.1
+cuda-python==13.3.1
+nvidia-cutlass-dsl==4.6.2
+numpy==2.3.5
+nvidia-ml-py==13.610.43
+transformers==5.15.0
+flashinfer-python==0.6.16.post3
+huggingface-hub==1.27.0
+safetensors==0.8.0
+ninja==1.13.0
+
+# vLLM must be installed from this exact Muse-support revision, using the
+# precompiled editable-install path described in README.md rather than resolved from PyPI:
+# https://github.com/vllm-project/vllm.git@99a10304dce8945119bd0b1a072297803c52a749

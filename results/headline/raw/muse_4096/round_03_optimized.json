@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "model": "muse",
+  "model_path": "/home/nvadmin/muse-glimmer/Muse-Glimmer-30B",
+  "model_revision": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+  "arm": "optimized",
+  "tokens": 4096,
+  "dtype": "bfloat16",
+  "cache_protocol": "cold L2 before every measured pass",
+  "wall_us": {
+    "mean": 164476.45700536668,
+    "median": 164361.82521283627,
+    "stddev": 1582.2374236965602,
+    "n": 40,
+    "samples": [
+      165709.55235511065,
+      166939.7372752428,
+      164332.68040418625,
+      164290.13200104237,
+      163040.03074765205,
+      164236.64055764675,
+      166856.65398836136,
+      166222.30131179094,
+      167131.85422122478,
+      165135.8650997281,
+      164096.62552177906,
+      164512.77770102024,
+      163359.85157638788,
+      165734.33205485344,
+      163839.47432041168,
+      166905.39475530386,
+      162985.32392829657,
+      165481.11010342836,
+      163210.13774722815,
+      161549.13697391748,
+      164940.9458041191,
+      163065.60952216387,
+      165983.65642130375,
+      163800.89800804853,
+      161298.10363054276,
+      163407.33971446753,
+      165071.14004343748,
+      162561.14840507507,
+      166467.42820739746,
+      165949.33811575174,
+      161495.28604000807,
+      163921.55829817057,
+      163225.251249969,
+      165389.58996534348,
+      164390.97002148628,
+      166176.2660369277,
+      164727.10017114878,
+      165709.46108549833,
+      161968.8980281353,
+      163938.67880105972
+    ]
+  },
+  "gpu_us": {},
+  "generated": [
+    42,
+    220,
+    28,
+    26,
+    33,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26,
+    28,
+    26
+  ],
+  "logprobs": [
+    [
+      42,
+      -2.504514694213867
+    ],
+    [
+      700,
+      -4.254514694213867
+    ],
+    [
+      460,
+      -4.504514694213867
+    ],
+    [
+      1182,
+      -4.629514694213867
+    ],
+    [
+      2538,
+      -4.942014694213867
+    ],
+    [
+      95,
+      -4.942014694213867
+    ],
+    [
+      198,
+      -4.942014694213867
+    ],
+    [
+      220,
+      -5.004514694213867
+    ],
+    [
+      21,
+      -5.129514694213867
+    ],
+    [
+      2696,
+      -5.254514694213867
+    ],
+    [
+      1049,
+      -5.504514694213867
+    ],
+    [
+      2804,
+      -5.567014694213867
+    ],
+    [
+      85,
+      -5.692014694213867
+    ],
+    [
+      14,
+      -5.692014694213867
+    ],
+    [
+      77,
+      -5.879514694213867
+    ],
+    [
+      90,
+      -5.879514694213867
+    ],
+    [
+      96,
+      -5.879514694213867
+    ],
+    [
+      40,
+      -6.004514694213867
+    ],
+    [
+      94,
+      -6.129514694213867
+    ],
+    [
+      88,
+      -6.192014694213867
+    ]
+  ],
+  "passes": 40,
+  "patch": {
+    "layers": 52,
+    "planes_gib": 67.58349609375,
+    "tokens": 4096,
+    "describe": {
+      "gate_up": "FusedNormResidual(2x2_postsum_cse)\nLcGemmSm100Hetero[2x2_postsum_cse] split_m=1 split_n=2 boundary=74/78 persist=4\n  region1: LcGemmSm100[2x2_postsum_cse] 4096x6656x39936 blocks (2, 2, 2) rank 7\n    mma_tiler=(256, 256, 64) cta_tile=(128, 256, 64) epi_tile=(128, 32)\n    ab_stage=6 acc_stage=2 epi_stage=2 smem=214016B tmem_cols=512\n    epilogue=7 writes (postsum CSE)\n    n=[0,74) (592 mma tiles, 8.00 waves), k_tiles=52/rank, persist=4, group_m=8/8\n  region2: LcGemmSm100[2x2_postsum_cse] 4096x6656x39936 blocks (2, 2, 2) rank 7\n    mma_tiler=(256, 128, 64) cta_tile=(128, 128, 64) epi_tile=(128, 32)\n    ab_stage=8 acc_stage=2 epi_stage=2 smem=214016B tmem_cols=256\n    epilogue=7 writes (postsum CSE)\n    n=[148,156) (64 mma tiles, 0.86 waves), k_tiles=52/rank, persist=1, group_m=8/8",
+      "down": "  chained (a_planes are free)\nLcGemmDownHetero[2x2_locality_ordered] split_n=2 boundary=9/13\n  region1: LcGemmDown[2x2_locality_ordered] 4096x19968x6656 blocks (2, 2, 2) rank 7\n    mma_tiler=(256, 256, 64) cta_tile=(128, 256, 64) epi_tile=(128, 32)\n    ab_stage=6 acc_stage=2 epi_stage=2 smem=214016B tmem_cols=512\n    n=[0,9) (72 mma tiles, 0.97 waves), k_tiles=156/rank raster=m_fast\n  region2: LcGemmDown[2x2_locality_ordered] 4096x19968x6656 blocks (2, 2, 2) rank 7\n    mma_tiler=(256, 128, 64) cta_tile=(128, 128, 64) epi_tile=(128, 32)\n    ab_stage=8 acc_stage=2 epi_stage=2 smem=214016B tmem_cols=256\n    n=[18,26) (64 mma tiles, 0.86 waves), k_tiles=156/rank raster=m_fast"
+    }
+  },
+  "kernels": {},
+  "sm_clock_min_mhz": 1350,
+  "sm_clock_mean_mhz": 1773.209090909091,
+  "sm_clock_max_mhz": 1965,
+  "fused_calls": 4160,
+  "reference_calls": 0,
+  "expected": 4160
+}

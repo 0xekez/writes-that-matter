@@ -1,0 +1,233 @@
+{
+  "format": "matmul-rabc-v1",
+  "shape": [
+    2,
+    2,
+    2
+  ],
+  "r": 7,
+  "coefficient_ring": "Z",
+  "valid_over": "any field by reduction of this integer tensor identity",
+  "layout": {
+    "A": "rank-major flattened row-major rows x inner coefficient matrices",
+    "B": "rank-major flattened row-major inner x cols coefficient matrices",
+    "C": "rank-major flattened row-major rows x cols output coefficient matrices"
+  },
+  "source": {
+    "name": "2x2_postsum_cse",
+    "base_scheme": "2x2_tma_reduce_162906.json",
+    "rank_order_zero_based": [
+      1,
+      0,
+      5,
+      3,
+      4,
+      2,
+      6
+    ],
+    "rank_signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "description": "Same tensor identity as the base scheme, with the products ordered and signed so that runs of them accumulate inside one tcgen05 TMEM buffer.  A chain's prefix sums are the shared postsum subexpressions; only they are written out, which takes this scheme from 14 global output writes to 7."
+  },
+  "A": [
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      -1
+    ],
+    [
+      0,
+      1,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  ],
+  "B": [
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      -1,
+      1
+    ],
+    [
+      0,
+      -1,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "C": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "postsum": {
+    "clear": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "dests": [
+      [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ]
+      ]
+    ]
+  }
+}

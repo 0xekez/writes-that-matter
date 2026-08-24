@@ -1,0 +1,36 @@
+{
+  "hardware": {
+    "gpu": "NVIDIA B200",
+    "memory_mib": 182632,
+    "sm_count": 148,
+    "power_limit_w": 1000,
+    "max_sm_clock_mhz": 1965
+  },
+  "system": {
+    "os": "Ubuntu 24.04.3 LTS",
+    "driver": "580.126.09",
+    "cuda_toolkit": "13.0",
+    "python": "3.12.13"
+  },
+  "python": {
+    "torch": "2.13.0+cu130",
+    "triton": "3.7.1",
+    "cuda-python": "13.3.1",
+    "nvidia-cutlass-dsl": "4.6.2",
+    "vllm": "0.26.1rc1.dev608+g99a10304d.precompiled",
+    "transformers": "5.15.0",
+    "flashinfer-python": "0.6.16.post3",
+    "huggingface-hub": "1.27.0",
+    "safetensors": "0.8.0",
+    "numpy": "2.3.5",
+    "ninja": "1.13.0",
+    "nvidia-ml-py": "13.610.43"
+  },
+  "sources": {
+    "vllm_git": "99a10304dce8945119bd0b1a072297803c52a749",
+    "muse_model": "meta-models/Muse-Glimmer-30B",
+    "muse_revision": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+    "qwen_model": "Qwen/Qwen3.8-27B",
+    "qwen_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "format": "matmul-rabc-v1",
+  "shape": [
+    2,
+    2,
+    2
+  ],
+  "r": 7,
+  "coefficient_ring": "Z",
+  "valid_over": "any field by reduction of this integer tensor identity",
+  "layout": {
+    "A": "rank-major flattened row-major rows x inner coefficient matrices",
+    "B": "rank-major flattened row-major inner x cols coefficient matrices",
+    "C": "rank-major flattened row-major rows x cols output coefficient matrices"
+  },
+  "source": {
+    "name": "2x2_locality_ordered",
+    "base_scheme": "2x2.json",
+    "rank_permutation_zero_based": [
+      5,
+      1,
+      3,
+      0,
+      2,
+      4,
+      6
+    ],
+    "description": "Same tensor identity as 2x2.json, ranks permuted to minimise the summed live width of the output blocks (19 -> 14). Rank order is a free gauge; a shorter live range means a C tile's successive TMA reduce-add contributions are closer in time and more likely to hit in L2 instead of round-tripping to DRAM."
+  },
+  "A": [
+    [
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      -1
+    ]
+  ],
+  "B": [
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "C": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      -1
+    ],
+    [
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ]
+  ]
+}

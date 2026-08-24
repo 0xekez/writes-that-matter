@@ -1,0 +1,25 @@
+.venv/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.DS_Store
+*~
+\#*\#
+
+# Reproduction outputs. Keep the directory documentation.
+results/runs/*
+!results/runs/README.md
+
+# TeX build products; the script-validated main.tex and main.pdf are retained.
+tex/*.aux
+tex/*.bbl
+tex/*.bcf
+tex/*.blg
+tex/*.fdb_latexmk
+tex/*.fls
+tex/*.log
+tex/*.out
+tex/*.run.xml
+tex/*.synctex.gz

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lcgemm"
+version = "0.1.0"
+description = "Low-complexity GEMM with fused pre-GEMM seams, for Blackwell (SM100)"
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+requires-python = ">=3.12,<3.13"
+classifiers = [
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "cuda-python==13.3.1",
+  "ninja==1.13.0",
+  "numpy==2.3.5",
+  "nvidia-cutlass-dsl==4.6.2",
+  "nvidia-ml-py==13.610.43",
+  "torch==2.13.0",
+  "triton==3.7.1",
+]
+
+[project.optional-dependencies]
+benchmark = [
+  "flashinfer-python==0.6.16.post3",
+  "huggingface-hub==1.27.0",
+  "safetensors==0.8.0",
+  "transformers==5.15.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["lcgemm*"]
+
+[tool.setuptools.package-data]
+lcgemm = ["schemes/*.json"]

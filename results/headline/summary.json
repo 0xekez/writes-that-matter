@@ -1,0 +1,2284 @@
+{
+  "schema_version": 1,
+  "estimator": "median arm time within each fresh-process block; ratio within block",
+  "iqr_unit": "matched round/block speedups",
+  "rounds": 10,
+  "cold_l2_passes_per_arm_per_round": 40,
+  "gpu": "0",
+  "started_at": "2026-08-23T19:45:02.167006+00:00",
+  "headline": {
+    "muse_1024": {
+      "model": "muse",
+      "tokens": 1024,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 44164.52534496784,
+              "mean_us": 44270.14740649611,
+              "sm_clock_mean_mhz": 1904.3021276595746
+            },
+            "optimized": {
+              "median_us": 45734.99597609043,
+              "mean_us": 45848.52149710059,
+              "sm_clock_mean_mhz": 1926.292372881356
+            }
+          },
+          "speedup_percent": -3.4338488450804894,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 45747.701078653336,
+              "mean_us": 45959.91426613182,
+              "sm_clock_mean_mhz": 1914.5
+            },
+            "stock": {
+              "median_us": 44133.246410638094,
+              "mean_us": 44210.94942372292,
+              "sm_clock_mean_mhz": 1910.3034188034187
+            }
+          },
+          "speedup_percent": -3.5290399953421314,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 44264.39851522446,
+              "mean_us": 44304.58990391344,
+              "sm_clock_mean_mhz": 1928.8297872340424
+            },
+            "optimized": {
+              "median_us": 45808.755327016115,
+              "mean_us": 45962.16676291078,
+              "sm_clock_mean_mhz": 1868.4322033898304
+            }
+          },
+          "speedup_percent": -3.3713136293857304,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 46369.28206309676,
+              "mean_us": 46454.564784653485,
+              "sm_clock_mean_mhz": 1923.2033898305085
+            },
+            "stock": {
+              "median_us": 44739.75906148553,
+              "mean_us": 44748.825463466346,
+              "sm_clock_mean_mhz": 1928.3489361702127
+            }
+          },
+          "speedup_percent": -3.514229526767021,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 44243.305921554565,
+              "mean_us": 44274.123245850205,
+              "sm_clock_mean_mhz": 1916.868085106383
+            },
+            "optimized": {
+              "median_us": 46134.240459650755,
+              "mean_us": 46402.92264521122,
+              "sm_clock_mean_mhz": 1878.7584745762713
+            }
+          },
+          "speedup_percent": -4.098765947496219,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 45837.55414932966,
+              "mean_us": 45923.21300879121,
+              "sm_clock_mean_mhz": 1925.2457627118645
+            },
+            "stock": {
+              "median_us": 44345.845468342304,
+              "mean_us": 44391.123251989484,
+              "sm_clock_mean_mhz": 1923.6382978723404
+            }
+          },
+          "speedup_percent": -3.2543374284929483,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 44892.496429383755,
+              "mean_us": 44870.56660000235,
+              "sm_clock_mean_mhz": 1905.6340425531914
+            },
+            "optimized": {
+              "median_us": 45740.879606455564,
+              "mean_us": 45832.72831514478,
+              "sm_clock_mean_mhz": 1932.322033898305
+            }
+          },
+          "speedup_percent": -1.8547592096415988,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 45864.63049054146,
+              "mean_us": 45978.789357468486,
+              "sm_clock_mean_mhz": 1929.2966101694915
+            },
+            "stock": {
+              "median_us": 44295.29095068574,
+              "mean_us": 44325.84245223552,
+              "sm_clock_mean_mhz": 1931.136170212766
+            }
+          },
+          "speedup_percent": -3.421677059361372,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 44438.45199421048,
+              "mean_us": 44517.46609993279,
+              "sm_clock_mean_mhz": 1908.268085106383
+            },
+            "optimized": {
+              "median_us": 45820.02339884639,
+              "mean_us": 46121.18049990386,
+              "sm_clock_mean_mhz": 1920.699152542373
+            }
+          },
+          "speedup_percent": -3.0152132237249996,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 45947.6332180202,
+              "mean_us": 46103.22266817093,
+              "sm_clock_mean_mhz": 1888.2627118644068
+            },
+            "stock": {
+              "median_us": 44273.58182147145,
+              "mean_us": 44333.147699944675,
+              "sm_clock_mean_mhz": 1937.8595744680852
+            }
+          },
+          "speedup_percent": -3.6433898316490465,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": -3.525337378198354,
+        "median": -3.427762952220931,
+        "q3": -3.283581478716144,
+        "values": [
+          -3.4338488450804894,
+          -3.5290399953421314,
+          -3.3713136293857304,
+          -3.514229526767021,
+          -4.098765947496219,
+          -3.2543374284929483,
+          -1.8547592096415988,
+          -3.421677059361372,
+          -3.0152132237249996,
+          -3.6433898316490465
+        ]
+      }
+    },
+    "muse_2048": {
+      "model": "muse",
+      "tokens": 2048,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 84289.61923345923,
+              "mean_us": 84273.05228542536,
+              "sm_clock_mean_mhz": 1810.8947368421052
+            },
+            "optimized": {
+              "median_us": 81436.83103844523,
+              "mean_us": 81752.22016870975,
+              "sm_clock_mean_mhz": 1852.6666666666667
+            }
+          },
+          "speedup_percent": 3.5030687695438933,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 81542.3489548266,
+              "mean_us": 81542.04769525677,
+              "sm_clock_mean_mhz": 1836.0871212121212
+            },
+            "stock": {
+              "median_us": 84120.42679265141,
+              "mean_us": 84043.03519055247,
+              "sm_clock_mean_mhz": 1884.5751879699249
+            }
+          },
+          "speedup_percent": 3.1616428406459507,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 84707.93906599283,
+              "mean_us": 84865.97125884145,
+              "sm_clock_mean_mhz": 1862.6516853932585
+            },
+            "optimized": {
+              "median_us": 81579.44539561868,
+              "mean_us": 81827.86635588855,
+              "sm_clock_mean_mhz": 1834.314393939394
+            }
+          },
+          "speedup_percent": 3.8349043134610072,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 81948.53318855166,
+              "mean_us": 81950.67108608782,
+              "sm_clock_mean_mhz": 1836.8301886792453
+            },
+            "stock": {
+              "median_us": 85504.20496612787,
+              "mean_us": 85622.77376186103,
+              "sm_clock_mean_mhz": 1844.5373134328358
+            }
+          },
+          "speedup_percent": 4.338908384601736,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 84432.243835181,
+              "mean_us": 84268.98596808314,
+              "sm_clock_mean_mhz": 1865.0676691729323
+            },
+            "optimized": {
+              "median_us": 81983.29154402018,
+              "mean_us": 82044.44532748312,
+              "sm_clock_mean_mhz": 1838.977358490566
+            }
+          },
+          "speedup_percent": 2.9871358480964227,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 82385.14605909586,
+              "mean_us": 82414.26502354443,
+              "sm_clock_mean_mhz": 1828.8188679245284
+            },
+            "stock": {
+              "median_us": 84050.35501345992,
+              "mean_us": 84220.02797015011,
+              "sm_clock_mean_mhz": 1851.53007518797
+            }
+          },
+          "speedup_percent": 2.0212490163816543,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 85377.96884775162,
+              "mean_us": 85360.01697648317,
+              "sm_clock_mean_mhz": 1864.565543071161
+            },
+            "optimized": {
+              "median_us": 82022.06529676914,
+              "mean_us": 81941.21287669986,
+              "sm_clock_mean_mhz": 1843.9962264150943
+            }
+          },
+          "speedup_percent": 4.091464338090334,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 81852.94549912214,
+              "mean_us": 86556.45223334432,
+              "sm_clock_mean_mhz": 1811.641791044776
+            },
+            "stock": {
+              "median_us": 84693.88587400317,
+              "mean_us": 84851.72663349658,
+              "sm_clock_mean_mhz": 1856.9625468164793
+            }
+          },
+          "speedup_percent": 3.470785757992667,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 85191.51853397489,
+              "mean_us": 85264.56616818905,
+              "sm_clock_mean_mhz": 1886.0224719101125
+            },
+            "optimized": {
+              "median_us": 81751.15054473281,
+              "mean_us": 81715.79472254962,
+              "sm_clock_mean_mhz": 1827.8181818181818
+            }
+          },
+          "speedup_percent": 4.20834198212241,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 81640.90989157557,
+              "mean_us": 81611.8102055043,
+              "sm_clock_mean_mhz": 1877.1136363636363
+            },
+            "stock": {
+              "median_us": 84469.90419179201,
+              "mean_us": 84606.19000252336,
+              "sm_clock_mean_mhz": 1867.5093632958801
+            }
+          },
+          "speedup_percent": 3.4651675293349005,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": 3.237524012818188,
+        "median": 3.48692726376828,
+        "q3": 4.027324331933002,
+        "values": [
+          3.5030687695438933,
+          3.1616428406459507,
+          3.8349043134610072,
+          4.338908384601736,
+          2.9871358480964227,
+          2.0212490163816543,
+          4.091464338090334,
+          3.470785757992667,
+          4.20834198212241,
+          3.4651675293349005
+        ]
+      }
+    },
+    "muse_4096": {
+      "model": "muse",
+      "tokens": 4096,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 172429.7385662794,
+              "mean_us": 172467.1249743551,
+              "sm_clock_mean_mhz": 1789.2759643916913
+            },
+            "optimized": {
+              "median_us": 164480.1408983767,
+              "mean_us": 164654.20154854655,
+              "sm_clock_mean_mhz": 1736.4350453172206
+            }
+          },
+          "speedup_percent": 4.833165648133986,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 165060.74834614992,
+              "mean_us": 164931.28007277846,
+              "sm_clock_mean_mhz": 1766.3293051359517
+            },
+            "stock": {
+              "median_us": 171889.46576789021,
+              "mean_us": 172018.907032907,
+              "sm_clock_mean_mhz": 1783.8869047619048
+            }
+          },
+          "speedup_percent": 4.137093458112617,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 171674.25248771906,
+              "mean_us": 171752.34297756106,
+              "sm_clock_mean_mhz": 1767
+            },
+            "optimized": {
+              "median_us": 164361.82521283627,
+              "mean_us": 164476.45700536668,
+              "sm_clock_mean_mhz": 1773.209090909091
+            }
+          },
+          "speedup_percent": 4.448981547517961,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 165271.4596129954,
+              "mean_us": 165333.5590614006,
+              "sm_clock_mean_mhz": 1743.5619335347433
+            },
+            "stock": {
+              "median_us": 172935.5282150209,
+              "mean_us": 172890.06195496768,
+              "sm_clock_mean_mhz": 1780.4154302670622
+            }
+          },
+          "speedup_percent": 4.637260795041032,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 172238.48076537251,
+              "mean_us": 172265.18595125526,
+              "sm_clock_mean_mhz": 1782.8100890207716
+            },
+            "optimized": {
+              "median_us": 164670.28530314565,
+              "mean_us": 164705.8667615056,
+              "sm_clock_mean_mhz": 1731.3232628398791
+            }
+          },
+          "speedup_percent": 4.5959691199261465,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 164067.5514936447,
+              "mean_us": 172638.8841168955,
+              "sm_clock_mean_mhz": 1763.5915915915916
+            },
+            "stock": {
+              "median_us": 171718.90567988157,
+              "mean_us": 171922.02219739556,
+              "sm_clock_mean_mhz": 1808.3988095238096
+            }
+          },
+          "speedup_percent": 4.663538960982927,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 172054.69449982047,
+              "mean_us": 172908.91131851822,
+              "sm_clock_mean_mhz": 1769.2142857142858
+            },
+            "optimized": {
+              "median_us": 164349.40742328763,
+              "mean_us": 164313.21038398892,
+              "sm_clock_mean_mhz": 1749.9939393939394
+            }
+          },
+          "speedup_percent": 4.688357078579308,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 164520.19289135933,
+              "mean_us": 164991.44949484617,
+              "sm_clock_mean_mhz": 1750.3021148036253
+            },
+            "stock": {
+              "median_us": 173292.17679798603,
+              "mean_us": 173438.89805488288,
+              "sm_clock_mean_mhz": 1787.8520710059172
+            }
+          },
+          "speedup_percent": 5.33185851077822,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 172107.79152810574,
+              "mean_us": 172180.61506282538,
+              "sm_clock_mean_mhz": 1785.44776119403
+            },
+            "optimized": {
+              "median_us": 164358.93066227436,
+              "mean_us": 164503.83521150798,
+              "sm_clock_mean_mhz": 1753.5363636363636
+            }
+          },
+          "speedup_percent": 4.714596788022285,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 164208.02380889654,
+              "mean_us": 163976.81455127895,
+              "sm_clock_mean_mhz": 1768.5454545454545
+            },
+            "stock": {
+              "median_us": 172050.88445916772,
+              "mean_us": 172002.93955393136,
+              "sm_clock_mean_mhz": 1806.419642857143
+            }
+          },
+          "speedup_percent": 4.7761738241236085,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": 4.606292038704868,
+        "median": 4.675948019781117,
+        "q3": 4.760779565098278,
+        "values": [
+          4.833165648133986,
+          4.137093458112617,
+          4.448981547517961,
+          4.637260795041032,
+          4.5959691199261465,
+          4.663538960982927,
+          4.688357078579308,
+          5.33185851077822,
+          4.714596788022285,
+          4.7761738241236085
+        ]
+      }
+    },
+    "muse_8192": {
+      "model": "muse",
+      "tokens": 8192,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 344528.8026705384,
+              "mean_us": 345429.0743917227,
+              "sm_clock_mean_mhz": 1681.0631578947368
+            },
+            "optimized": {
+              "median_us": 338156.52690827847,
+              "mean_us": 338368.3449588716,
+              "sm_clock_mean_mhz": 1625.5245202558635
+            }
+          },
+          "speedup_percent": 1.8844160189722903,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 337932.6965659857,
+              "mean_us": 337600.3142213449,
+              "sm_clock_mean_mhz": 1598.7036247334754
+            },
+            "stock": {
+              "median_us": 344480.33198714256,
+              "mean_us": 345007.505803369,
+              "sm_clock_mean_mhz": 1684.4863157894738
+            }
+          },
+          "speedup_percent": 1.9375560541175396,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 344193.57823207974,
+              "mean_us": 344168.837624602,
+              "sm_clock_mean_mhz": 1662.4746835443038
+            },
+            "optimized": {
+              "median_us": 337343.29510480165,
+              "mean_us": 337511.507445015,
+              "sm_clock_mean_mhz": 1618.337606837607
+            }
+          },
+          "speedup_percent": 2.030656374880646,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 337869.833689183,
+              "mean_us": 338211.1399201676,
+              "sm_clock_mean_mhz": 1633.0127931769723
+            },
+            "stock": {
+              "median_us": 345607.13823884726,
+              "mean_us": 346062.661963515,
+              "sm_clock_mean_mhz": 1693.1957894736843
+            }
+          },
+          "speedup_percent": 2.290025263629203,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 343992.4968406558,
+              "mean_us": 344356.65188357234,
+              "sm_clock_mean_mhz": 1679.8227848101267
+            },
+            "optimized": {
+              "median_us": 337961.8125036359,
+              "mean_us": 338025.0643705949,
+              "sm_clock_mean_mhz": 1611.2068230277187
+            }
+          },
+          "speedup_percent": 1.7844277412126353,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 338226.5488617122,
+              "mean_us": 338203.4309441224,
+              "sm_clock_mean_mhz": 1626.8869936034116
+            },
+            "stock": {
+              "median_us": 345038.38885575533,
+              "mean_us": 345216.6707953438,
+              "sm_clock_mean_mhz": 1695.3368421052633
+            }
+          },
+          "speedup_percent": 2.013987375316373,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 345165.6363904476,
+              "mean_us": 345615.0255398825,
+              "sm_clock_mean_mhz": 1680.6926315789474
+            },
+            "optimized": {
+              "median_us": 338465.2817621827,
+              "mean_us": 338815.43029565364,
+              "sm_clock_mean_mhz": 1631.90618336887
+            }
+          },
+          "speedup_percent": 1.9796283368799905,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 338445.7263164222,
+              "mean_us": 338496.97534460574,
+              "sm_clock_mean_mhz": 1630.2606837606838
+            },
+            "stock": {
+              "median_us": 344298.8507449627,
+              "mean_us": 344673.34190849215,
+              "sm_clock_mean_mhz": 1694.3902953586498
+            }
+          },
+          "speedup_percent": 1.7294130117241346,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 344692.93989241123,
+              "mean_us": 344682.67078045756,
+              "sm_clock_mean_mhz": 1687.7025316455697
+            },
+            "optimized": {
+              "median_us": 338546.42417281866,
+              "mean_us": 338286.7258042097,
+              "sm_clock_mean_mhz": 1636.5820895522388
+            }
+          },
+          "speedup_percent": 1.8155606678199376,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 337131.93610310555,
+              "mean_us": 337294.22208853066,
+              "sm_clock_mean_mhz": 1632.7628205128206
+            },
+            "stock": {
+              "median_us": 343861.48815974593,
+              "mean_us": 343968.4718614444,
+              "sm_clock_mean_mhz": 1695.6308016877638
+            }
+          },
+          "speedup_percent": 1.996118236209532,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": 1.8327745056080258,
+        "median": 1.958592195498765,
+        "q3": 2.0095200905396626,
+        "values": [
+          1.8844160189722903,
+          1.9375560541175396,
+          2.030656374880646,
+          2.290025263629203,
+          1.7844277412126353,
+          2.013987375316373,
+          1.9796283368799905,
+          1.7294130117241346,
+          1.8155606678199376,
+          1.996118236209532
+        ]
+      }
+    },
+    "qwen_1024": {
+      "model": "qwen",
+      "tokens": 1024,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 48134.964890778065,
+              "mean_us": 48207.83119648695,
+              "sm_clock_mean_mhz": 1918.2016806722688
+            },
+            "optimized": {
+              "median_us": 49239.16328698397,
+              "mean_us": 49631.25209324062,
+              "sm_clock_mean_mhz": 1953.2301255230125
+            }
+          },
+          "speedup_percent": -2.2425206329567904,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 49561.3869279623,
+              "mean_us": 53059.05509740114,
+              "sm_clock_mean_mhz": 1918.3983402489628
+            },
+            "stock": {
+              "median_us": 48009.84123721719,
+              "mean_us": 48031.849157996476,
+              "sm_clock_mean_mhz": 1934.6666666666667
+            }
+          },
+          "speedup_percent": -3.1305534144964398,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 48131.635412573814,
+              "mean_us": 48376.240907236934,
+              "sm_clock_mean_mhz": 1939.6470588235295
+            },
+            "optimized": {
+              "median_us": 49617.023672908545,
+              "mean_us": 49669.343209825456,
+              "sm_clock_mean_mhz": 1948.3221757322176
+            }
+          },
+          "speedup_percent": -2.9937068981140236,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 48911.1952483654,
+              "mean_us": 48973.69225509465,
+              "sm_clock_mean_mhz": 1946.8235294117646
+            },
+            "stock": {
+              "median_us": 48138.709273189306,
+              "mean_us": 48212.09581568837,
+              "sm_clock_mean_mhz": 1914.1512605042017
+            }
+          },
+          "speedup_percent": -1.579364338273681,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 48346.2973497808,
+              "mean_us": 48620.7241890952,
+              "sm_clock_mean_mhz": 1929.5210084033613
+            },
+            "optimized": {
+              "median_us": 49521.81503176689,
+              "mean_us": 49485.615687444806,
+              "sm_clock_mean_mhz": 1940.0125523012553
+            }
+          },
+          "speedup_percent": -2.3737370716966466,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 49337.755888700485,
+              "mean_us": 49663.97909447551,
+              "sm_clock_mean_mhz": 1948.2133891213389
+            },
+            "stock": {
+              "median_us": 48207.1409933269,
+              "mean_us": 48346.10936231911,
+              "sm_clock_mean_mhz": 1930.9495798319329
+            }
+          },
+          "speedup_percent": -2.2915815180652,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 48563.51483613253,
+              "mean_us": 48551.216861233115,
+              "sm_clock_mean_mhz": 1927
+            },
+            "optimized": {
+              "median_us": 49341.5636010468,
+              "mean_us": 49451.24923251569,
+              "sm_clock_mean_mhz": 1925.1799163179917
+            }
+          },
+          "speedup_percent": -1.5768628071968216,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 48838.39841932058,
+              "mean_us": 49593.23487710208,
+              "sm_clock_mean_mhz": 1910.2719665271966
+            },
+            "stock": {
+              "median_us": 48506.90020248294,
+              "mean_us": 48615.70780631155,
+              "sm_clock_mean_mhz": 1946.3655462184875
+            }
+          },
+          "speedup_percent": -0.6787655360674272,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 48172.42734134197,
+              "mean_us": 48235.32390873879,
+              "sm_clock_mean_mhz": 1920.9285714285713
+            },
+            "optimized": {
+              "median_us": 49328.57910171151,
+              "mean_us": 49629.318970255554,
+              "sm_clock_mean_mhz": 1936.9079497907949
+            }
+          },
+          "speedup_percent": -2.3437767343463256,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 49078.443087637424,
+              "mean_us": 49503.29714920372,
+              "sm_clock_mean_mhz": 1927.878661087866
+            },
+            "stock": {
+              "median_us": 48175.97707733512,
+              "mean_us": 48221.51358239353,
+              "sm_clock_mean_mhz": 1939.142857142857
+            }
+          },
+          "speedup_percent": -1.838823633200437,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": -2.3662469873590664,
+        "median": -2.267051075510995,
+        "q3": -1.6442291620053702,
+        "values": [
+          -2.2425206329567904,
+          -3.1305534144964398,
+          -2.9937068981140236,
+          -1.579364338273681,
+          -2.3737370716966466,
+          -2.2915815180652,
+          -1.5768628071968216,
+          -0.6787655360674272,
+          -2.3437767343463256,
+          -1.838823633200437
+        ]
+      }
+    },
+    "qwen_2048": {
+      "model": "qwen",
+      "tokens": 2048,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 87739.72745984793,
+              "mean_us": 87902.77349762619,
+              "sm_clock_mean_mhz": 1880.5130111524163
+            },
+            "optimized": {
+              "median_us": 84488.19164186716,
+              "mean_us": 84597.79231343418,
+              "sm_clock_mean_mhz": 1874.887640449438
+            }
+          },
+          "speedup_percent": 3.848509187844318,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 84466.68367832899,
+              "mean_us": 84383.84109176695,
+              "sm_clock_mean_mhz": 1871.7041198501872
+            },
+            "stock": {
+              "median_us": 87523.22709187865,
+              "mean_us": 87600.94195604324,
+              "sm_clock_mean_mhz": 1879.5018587360594
+            }
+          },
+          "speedup_percent": 3.618637882351061,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 87352.57340595126,
+              "mean_us": 87408.6843105033,
+              "sm_clock_mean_mhz": 1893.4089219330856
+            },
+            "optimized": {
+              "median_us": 85058.09213966131,
+              "mean_us": 86923.25768060982,
+              "sm_clock_mean_mhz": 1846.7620817843865
+            }
+          },
+          "speedup_percent": 2.6975461223871733,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 18,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 84301.07356980443,
+              "mean_us": 84439.37220145017,
+              "sm_clock_mean_mhz": 1875.4569288389514
+            },
+            "stock": {
+              "median_us": 87543.42794418335,
+              "mean_us": 87473.19711837918,
+              "sm_clock_mean_mhz": 1865.7472118959108
+            }
+          },
+          "speedup_percent": 3.8461602410011286,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 87848.28521311283,
+              "mean_us": 87862.06552758813,
+              "sm_clock_mean_mhz": 1835.364312267658
+            },
+            "optimized": {
+              "median_us": 84538.07700425386,
+              "mean_us": 84599.34229031205,
+              "sm_clock_mean_mhz": 1869.3970037453184
+            }
+          },
+          "speedup_percent": 3.915641715735263,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 84300.029091537,
+              "mean_us": 84357.77896083891,
+              "sm_clock_mean_mhz": 1832.0601503759399
+            },
+            "stock": {
+              "median_us": 87823.60004261136,
+              "mean_us": 87848.88659138232,
+              "sm_clock_mean_mhz": 1846.4312267657992
+            }
+          },
+          "speedup_percent": 4.179798025037806,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 87954.54865321517,
+              "mean_us": 88028.75434048474,
+              "sm_clock_mean_mhz": 1839.728624535316
+            },
+            "optimized": {
+              "median_us": 84845.713339746,
+              "mean_us": 84856.05753958225,
+              "sm_clock_mean_mhz": 1848.5056179775281
+            }
+          },
+          "speedup_percent": 3.664104161656967,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 84792.30431839824,
+              "mean_us": 84882.80905876309,
+              "sm_clock_mean_mhz": 1874.7715355805244
+            },
+            "stock": {
+              "median_us": 87517.83613115549,
+              "mean_us": 87476.9038753584,
+              "sm_clock_mean_mhz": 1866.018587360595
+            }
+          },
+          "speedup_percent": 3.214362240378299,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 87962.40529045463,
+              "mean_us": 87853.47742959857,
+              "sm_clock_mean_mhz": 1863.4832713754647
+            },
+            "optimized": {
+              "median_us": 85350.89623183012,
+              "mean_us": 85594.53375637531,
+              "sm_clock_mean_mhz": 1884.5580524344568
+            }
+          },
+          "speedup_percent": 3.0597324385805313,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 84496.56516313553,
+              "mean_us": 84588.0103064701,
+              "sm_clock_mean_mhz": 1881.5393258426966
+            },
+            "stock": {
+              "median_us": 87811.51380389929,
+              "mean_us": 88015.66767506301,
+              "sm_clock_mean_mhz": 1840.0631970260224
+            }
+          },
+          "speedup_percent": 3.923175615912511,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 19,
+            "top20_agreement": 20,
+            "greedy_equal": false
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": 3.3154311508714898,
+        "median": 3.755132201329048,
+        "q3": 3.898858583762527,
+        "values": [
+          3.848509187844318,
+          3.618637882351061,
+          2.6975461223871733,
+          3.8461602410011286,
+          3.915641715735263,
+          4.179798025037806,
+          3.664104161656967,
+          3.214362240378299,
+          3.0597324385805313,
+          3.923175615912511
+        ]
+      }
+    },
+    "qwen_4096": {
+      "model": "qwen",
+      "tokens": 4096,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 174967.7462503314,
+              "mean_us": 174734.3372553587,
+              "sm_clock_mean_mhz": 1775.0117994100294
+            },
+            "optimized": {
+              "median_us": 167829.00877296925,
+              "mean_us": 167936.83350551873,
+              "sm_clock_mean_mhz": 1758.984984984985
+            }
+          },
+          "speedup_percent": 4.253577810865283,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 168708.93212035298,
+              "mean_us": 168593.95559877157,
+              "sm_clock_mean_mhz": 1790.3652694610778
+            },
+            "stock": {
+              "median_us": 174163.46725076437,
+              "mean_us": 174970.53411789238,
+              "sm_clock_mean_mhz": 1793.2212389380531
+            }
+          },
+          "speedup_percent": 3.233103939345816,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 173864.5425066352,
+              "mean_us": 174263.4565103799,
+              "sm_clock_mean_mhz": 1749.9289940828403
+            },
+            "optimized": {
+              "median_us": 168302.23612487316,
+              "mean_us": 168408.3292260766,
+              "sm_clock_mean_mhz": 1753.1201201201202
+            }
+          },
+          "speedup_percent": 3.3049509678736655,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 167697.5591108203,
+              "mean_us": 167700.07507875562,
+              "sm_clock_mean_mhz": 1766.03003003003
+            },
+            "stock": {
+              "median_us": 175381.3810646534,
+              "mean_us": 174910.16276180744,
+              "sm_clock_mean_mhz": 1761.7699115044247
+            }
+          },
+          "speedup_percent": 4.581952173051818,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 173504.0689818561,
+              "mean_us": 173692.6696728915,
+              "sm_clock_mean_mhz": 1779.4556213017752
+            },
+            "optimized": {
+              "median_us": 168332.44543522596,
+              "mean_us": 168636.87599543482,
+              "sm_clock_mean_mhz": 1788.9281437125749
+            }
+          },
+          "speedup_percent": 3.072267816973029,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 168060.05081161857,
+              "mean_us": 168364.36307057738,
+              "sm_clock_mean_mhz": 1760.9161676646706
+            },
+            "stock": {
+              "median_us": 175087.9855826497,
+              "mean_us": 175048.12565166503,
+              "sm_clock_mean_mhz": 1792.4218289085545
+            }
+          },
+          "speedup_percent": 4.1817997418725605,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 175073.07091727853,
+              "mean_us": 174909.52438674867,
+              "sm_clock_mean_mhz": 1783.5870206489676
+            },
+            "optimized": {
+              "median_us": 167101.26446560025,
+              "mean_us": 167329.43335082382,
+              "sm_clock_mean_mhz": 1765.8918918918919
+            }
+          },
+          "speedup_percent": 4.770644002708524,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 168020.2018469572,
+              "mean_us": 168001.24789588153,
+              "sm_clock_mean_mhz": 1801.3723723723724
+            },
+            "stock": {
+              "median_us": 176305.57110533118,
+              "mean_us": 176058.4818199277,
+              "sm_clock_mean_mhz": 1758.4735294117647
+            }
+          },
+          "speedup_percent": 4.93117444646376,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 174150.92652663589,
+              "mean_us": 174393.6368264258,
+              "sm_clock_mean_mhz": 1787.9289940828403
+            },
+            "optimized": {
+              "median_us": 167441.2628635764,
+              "mean_us": 167941.3003847003,
+              "sm_clock_mean_mhz": 1770.5615615615616
+            }
+          },
+          "speedup_percent": 4.0071745448588825,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 168464.82502296567,
+              "mean_us": 168561.11977249384,
+              "sm_clock_mean_mhz": 1763.3502994011976
+            },
+            "stock": {
+              "median_us": 174218.30259263515,
+              "mean_us": 174291.68389644474,
+              "sm_clock_mean_mhz": 1771.905325443787
+            }
+          },
+          "speedup_percent": 3.415239691066163,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": 3.3325231486717897,
+        "median": 4.094487143365722,
+        "q3": 4.499858582505184,
+        "values": [
+          4.253577810865283,
+          3.233103939345816,
+          3.3049509678736655,
+          4.581952173051818,
+          3.072267816973029,
+          4.1817997418725605,
+          4.770644002708524,
+          4.93117444646376,
+          4.0071745448588825,
+          3.415239691066163
+        ]
+      }
+    },
+    "qwen_8192": {
+      "model": "qwen",
+      "tokens": 8192,
+      "rounds": [
+        {
+          "round": 1,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 341558.4694594145,
+              "mean_us": 341447.0492862165,
+              "sm_clock_mean_mhz": 1683.2547770700637
+            },
+            "optimized": {
+              "median_us": 333185.81711500883,
+              "mean_us": 332907.535857521,
+              "sm_clock_mean_mhz": 1640.036559139785
+            }
+          },
+          "speedup_percent": 2.5129077872830363,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 332961.85033395886,
+              "mean_us": 332676.00275576115,
+              "sm_clock_mean_mhz": 1671.1698924731184
+            },
+            "stock": {
+              "median_us": 341544.0474636853,
+              "mean_us": 341664.1654679552,
+              "sm_clock_mean_mhz": 1705.8601694915253
+            }
+          },
+          "speedup_percent": 2.577531666501276,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 341925.71556195617,
+              "mean_us": 342208.2861652598,
+              "sm_clock_mean_mhz": 1713.2521186440679
+            },
+            "optimized": {
+              "median_us": 332562.8321617842,
+              "mean_us": 332608.6738612503,
+              "sm_clock_mean_mhz": 1661.7290322580645
+            }
+          },
+          "speedup_percent": 2.815372764090829,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 4,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 333129.96104359627,
+              "mean_us": 332962.0680771768,
+              "sm_clock_mean_mhz": 1671.7483870967742
+            },
+            "stock": {
+              "median_us": 342201.279476285,
+              "mean_us": 342335.77917329967,
+              "sm_clock_mean_mhz": 1709.699152542373
+            }
+          },
+          "speedup_percent": 2.7230569127649096,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 5,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 342196.6852620244,
+              "mean_us": 342391.869192943,
+              "sm_clock_mean_mhz": 1684.760593220339
+            },
+            "optimized": {
+              "median_us": 333009.61647182703,
+              "mean_us": 333714.30167462677,
+              "sm_clock_mean_mhz": 1668.178494623656
+            }
+          },
+          "speedup_percent": 2.758799847143334,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 6,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 332636.1277140677,
+              "mean_us": 332856.37884400785,
+              "sm_clock_mean_mhz": 1673.2086021505377
+            },
+            "stock": {
+              "median_us": 342218.47634762526,
+              "mean_us": 342400.96085704863,
+              "sm_clock_mean_mhz": 1694.082627118644
+            }
+          },
+          "speedup_percent": 2.8807299734424863,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 7,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 342351.1637374759,
+              "mean_us": 342451.7479259521,
+              "sm_clock_mean_mhz": 1698.4978813559321
+            },
+            "optimized": {
+              "median_us": 333580.96703886986,
+              "mean_us": 333523.4842263162,
+              "sm_clock_mean_mhz": 1665.215053763441
+            }
+          },
+          "speedup_percent": 2.6291058439146697,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 8,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 333619.9992336333,
+              "mean_us": 333690.1046335697,
+              "sm_clock_mean_mhz": 1655.5655913978494
+            },
+            "stock": {
+              "median_us": 341452.46306434274,
+              "mean_us": 342038.5238248855,
+              "sm_clock_mean_mhz": 1696.0635593220338
+            }
+          },
+          "speedup_percent": 2.3477201153113025,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 9,
+          "order": [
+            "stock",
+            "optimized"
+          ],
+          "arms": {
+            "stock": {
+              "median_us": 342068.5068704188,
+              "mean_us": 342204.8253938556,
+              "sm_clock_mean_mhz": 1694.1885593220338
+            },
+            "optimized": {
+              "median_us": 332542.069721967,
+              "mean_us": 332672.03918658197,
+              "sm_clock_mean_mhz": 1660.2817204301075
+            }
+          },
+          "speedup_percent": 2.8647314177170813,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        },
+        {
+          "round": 10,
+          "order": [
+            "optimized",
+            "stock"
+          ],
+          "arms": {
+            "optimized": {
+              "median_us": 332175.9491227567,
+              "mean_us": 332351.9814759493,
+              "sm_clock_mean_mhz": 1647.5495689655172
+            },
+            "stock": {
+              "median_us": 342021.84807509184,
+              "mean_us": 342087.74759899825,
+              "sm_clock_mean_mhz": 1698.324152542373
+            }
+          },
+          "speedup_percent": 2.964061359149306,
+          "agreement": {
+            "top1_equal": true,
+            "top20_overlap": 20,
+            "top20_agreement": 20,
+            "greedy_equal": true
+          }
+        }
+      ],
+      "speedup_percent": {
+        "n": 10,
+        "q1": 2.590425210854624,
+        "median": 2.7409283799541218,
+        "q3": 2.852391754310518,
+        "values": [
+          2.5129077872830363,
+          2.577531666501276,
+          2.815372764090829,
+          2.7230569127649096,
+          2.758799847143334,
+          2.8807299734424863,
+          2.6291058439146697,
+          2.3477201153113025,
+          2.8647314177170813,
+          2.964061359149306
+        ]
+      }
+    }
+  },
+  "completed_at": "2026-08-24T00:01:17.685512+00:00"
+}
